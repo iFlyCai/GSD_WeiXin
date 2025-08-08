@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -126,6 +126,8 @@
 		99D693971C6F774B00DA97E1 /* SDChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D693961C6F774B00DA97E1 /* SDChatTableViewCell.m */; };
 		99D6949C1C6F81E700DA97E1 /* SDChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D6949B1C6F81E700DA97E1 /* SDChatModel.m */; };
 		99D694F51C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D694F41C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.m */; };
+		AA4EC40D2E4657FD0055E7A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4EC40C2E4657FD0055E7A3 /* Main.storyboard */; };
+		AA4EC4112E46594F0055E7A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4EC4102E46594F0055E7A3 /* LaunchScreen.storyboard */; };
 		F34C4F16077295E5A04869E8 /* Pods_GSD_WeiXin_wechat_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A8CAC22A1C89A9B21FFC3C /* Pods_GSD_WeiXin_wechat_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -339,6 +341,8 @@
 		99D6949B1C6F81E700DA97E1 /* SDChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDChatModel.m; sourceTree = "<group>"; };
 		99D694F31C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTimeLineRefreshFooter.h; sourceTree = "<group>"; };
 		99D694F41C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTimeLineRefreshFooter.m; sourceTree = "<group>"; };
+		AA4EC40C2E4657FD0055E7A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AA4EC4102E46594F0055E7A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B233BA5DB1C250583D0FEC7C /* Pods-GSD_WeiXin(wechat)-GSD_WeiXin(wechat)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSD_WeiXin(wechat)-GSD_WeiXin(wechat)UITests.release.xcconfig"; path = "Target Support Files/Pods-GSD_WeiXin(wechat)-GSD_WeiXin(wechat)UITests/Pods-GSD_WeiXin(wechat)-GSD_WeiXin(wechat)UITests.release.xcconfig"; sourceTree = "<group>"; };
 		E3A8CAC22A1C89A9B21FFC3C /* Pods_GSD_WeiXin_wechat_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSD_WeiXin_wechat_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA1FBD7EB3C38D425EB8E33 /* Pods-GSD_WeiXin(wechat).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSD_WeiXin(wechat).release.xcconfig"; path = "Target Support Files/Pods-GSD_WeiXin(wechat)/Pods-GSD_WeiXin(wechat).release.xcconfig"; sourceTree = "<group>"; };
@@ -691,7 +695,9 @@
 		99D692C21C6B36C300DA97E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA4EC4102E46594F0055E7A3 /* LaunchScreen.storyboard */,
 				99D692C31C6B36C300DA97E1 /* main.m */,
+				AA4EC40C2E4657FD0055E7A3 /* Main.storyboard */,
 			);
 			name = "Supporting Files";
 			path = ..;
@@ -1153,7 +1159,8 @@
 		99D692B71C6B36C300DA97E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1640;
 				ORGANIZATIONNAME = GSD;
 				TargetAttributes = {
 					99D692BE1C6B36C300DA97E1 = {
@@ -1202,6 +1209,7 @@
 				48EFF4941C7EB37B009252A5 /* pic4.jpg in Resources */,
 				99D6934E1C6B49A200DA97E1 /* 6.jpg in Resources */,
 				99D6935D1C6B49A200DA97E1 /* 21.jpg in Resources */,
+				AA4EC4112E46594F0055E7A3 /* LaunchScreen.storyboard in Resources */,
 				48F337C21C72FDD90049144A /* test0.jpg in Resources */,
 				99D693561C6B49A200DA97E1 /* 14.jpg in Resources */,
 				99D6935B1C6B49A200DA97E1 /* 19.jpg in Resources */,
@@ -1231,6 +1239,7 @@
 				48EFF4911C7EB37B009252A5 /* pic1.jpg in Resources */,
 				99D6932E1C6B412F00DA97E1 /* Me.xcassets in Resources */,
 				99D6934D1C6B49A200DA97E1 /* 5.jpg in Resources */,
+				AA4EC40D2E4657FD0055E7A3 /* Main.storyboard in Resources */,
 				99D693571C6B49A200DA97E1 /* 15.jpg in Resources */,
 				99D693481C6B49A200DA97E1 /* 0.jpg in Resources */,
 				48EFF4951C7EB37B009252A5 /* pic5.jpg in Resources */,
@@ -1483,17 +1492,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1501,6 +1522,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1515,7 +1537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1526,17 +1548,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1544,6 +1578,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1552,7 +1587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1564,11 +1599,15 @@
 			baseConfigurationReference = 0A66EEA46083656A33EF9D09 /* Pods-GSD_WeiXin(wechat).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsdios.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1579,11 +1618,15 @@
 			baseConfigurationReference = FBA1FBD7EB3C38D425EB8E33 /* Pods-GSD_WeiXin(wechat).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsdios.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1596,7 +1639,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gsdios-126.com.GSD-WeiXin-wechat-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSD_WeiXin(wechat).app/GSD_WeiXin(wechat)";
@@ -1610,7 +1657,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gsdios-126.com.GSD-WeiXin-wechat-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSD_WeiXin(wechat).app/GSD_WeiXin(wechat)";
@@ -1623,7 +1674,11 @@
 			buildSettings = {
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)UITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gsdios-126.com.GSD-WeiXin-wechat-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "GSD_WeiXin(wechat)";
@@ -1637,7 +1692,11 @@
 			buildSettings = {
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)UITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gsdios-126.com.GSD-WeiXin-wechat-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "GSD_WeiXin(wechat)";
