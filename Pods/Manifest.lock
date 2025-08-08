@@ -1,0 +1,20 @@
+PODS:
+  - MLEmojiLabel (1.0.2):
+    - TTTAttributedLabel (~> 1.13.4)
+  - TTTAttributedLabel (1.13.4)
+
+DEPENDENCIES:
+  - MLEmojiLabel
+
+SPEC REPOS:
+  trunk:
+    - MLEmojiLabel
+    - TTTAttributedLabel
+
+SPEC CHECKSUMS:
+  MLEmojiLabel: 36d73c19f9975cbf9def24e5bc135263b0337fd8
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+
+PODFILE CHECKSUM: 8354d31bc08b29ddc18c703888872ac5edd50943
+
+COCOAPODS: 1.16.2

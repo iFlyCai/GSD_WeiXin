@@ -29,18 +29,18 @@
 #import "SDTimeLineCellCommentView.h"
 #import "UIView+SDAutoLayout.h"
 #import "SDTimeLineCellModel.h"
-#import "MLLinkLabel.h"
+//#import "MLLinkLabel.h"
 
 #import "LEETheme.h"
 
-@interface SDTimeLineCellCommentView () <MLLinkLabelDelegate>
+@interface SDTimeLineCellCommentView ()
 
 @property (nonatomic, strong) NSArray *likeItemsArray;
 @property (nonatomic, strong) NSArray *commentItemsArray;
 
 @property (nonatomic, strong) UIImageView *bgImageView;
 
-@property (nonatomic, strong) MLLinkLabel *likeLabel;
+//@property (nonatomic, strong) MLLinkLabel *likeLabel;
 @property (nonatomic, strong) UIView *likeLableBottomLine;
 
 @property (nonatomic, strong) NSMutableArray *commentLabelsArray;
@@ -71,11 +71,11 @@
     _bgImageView.backgroundColor = [UIColor clearColor];
     [self addSubview:_bgImageView];
     
-    _likeLabel = [MLLinkLabel new];
-    _likeLabel.font = [UIFont systemFontOfSize:14];
-    _likeLabel.linkTextAttributes = @{NSForegroundColorAttributeName : TimeLineCellHighlightedColor};
-    _likeLabel.isAttributedContent = YES;
-    [self addSubview:_likeLabel];
+//    _likeLabel = [MLLinkLabel new];
+//    _likeLabel.font = [UIFont systemFontOfSize:14];
+//    _likeLabel.linkTextAttributes = @{NSForegroundColorAttributeName : TimeLineCellHighlightedColor};
+//    _likeLabel.isAttributedContent = YES;
+//    [self addSubview:_likeLabel];
     
     _likeLableBottomLine = [UIView new];
     [self addSubview:_likeLableBottomLine];
@@ -93,9 +93,9 @@
     .LeeAddTintColor(DAY , SDColor(230, 230, 230, 1.0f))
     .LeeAddTintColor(NIGHT , SDColor(30, 30, 30, 1.0f));
     
-    _likeLabel.lee_theme
-    .LeeAddTextColor(DAY , [UIColor blackColor])
-    .LeeAddTextColor(NIGHT , [UIColor grayColor]);
+//    _likeLabel.lee_theme
+//    .LeeAddTextColor(DAY , [UIColor blackColor])
+//    .LeeAddTextColor(NIGHT , [UIColor grayColor]);
     
     _likeLableBottomLine.lee_theme
     .LeeAddBackgroundColor(DAY , SDColor(210, 210, 210, 1.0f))
@@ -109,27 +109,27 @@
     
     long originalLabelsCount = self.commentLabelsArray.count;
     long needsToAddCount = commentItemsArray.count > originalLabelsCount ? (commentItemsArray.count - originalLabelsCount) : 0;
-    for (int i = 0; i < needsToAddCount; i++) {
-        MLLinkLabel *label = [MLLinkLabel new];
-        UIColor *highLightColor = TimeLineCellHighlightedColor;
-        label.linkTextAttributes = @{NSForegroundColorAttributeName : highLightColor};
-        label.lee_theme
-        .LeeAddTextColor(DAY , [UIColor blackColor])
-        .LeeAddTextColor(NIGHT , [UIColor grayColor]);
-        label.font = [UIFont systemFontOfSize:14];
-        label.delegate = self;
-        [self addSubview:label];
-        [self.commentLabelsArray addObject:label];
-    }
+//    for (int i = 0; i < needsToAddCount; i++) {
+//        MLLinkLabel *label = [MLLinkLabel new];
+//        UIColor *highLightColor = TimeLineCellHighlightedColor;
+//        label.linkTextAttributes = @{NSForegroundColorAttributeName : highLightColor};
+//        label.lee_theme
+//        .LeeAddTextColor(DAY , [UIColor blackColor])
+//        .LeeAddTextColor(NIGHT , [UIColor grayColor]);
+//        label.font = [UIFont systemFontOfSize:14];
+//        label.delegate = self;
+//        [self addSubview:label];
+//        [self.commentLabelsArray addObject:label];
+//    }
     
-    for (int i = 0; i < commentItemsArray.count; i++) {
-        SDTimeLineCellCommentItemModel *model = commentItemsArray[i];
-        MLLinkLabel *label = self.commentLabelsArray[i];
-        if (!model.attributedContent) {
-            model.attributedContent = [self generateAttributedStringWithCommentItemModel:model];
-        }
-        label.attributedText = model.attributedContent;
-    }
+//    for (int i = 0; i < commentItemsArray.count; i++) {
+//        SDTimeLineCellCommentItemModel *model = commentItemsArray[i];
+//        MLLinkLabel *label = self.commentLabelsArray[i];
+//        if (!model.attributedContent) {
+//            model.attributedContent = [self generateAttributedStringWithCommentItemModel:model];
+//        }
+//        label.attributedText = model.attributedContent;
+//    }
 }
 
 - (void)setLikeItemsArray:(NSArray *)likeItemsArray
@@ -154,7 +154,7 @@
         [attributedText appendAttributedString:model.attributedContent];
     }
     
-    _likeLabel.attributedText = [attributedText copy];
+//    _likeLabel.attributedText = [attributedText copy];
 }
 
 - (NSMutableArray *)commentLabelsArray
@@ -190,19 +190,19 @@
     
     UIView *lastTopView = nil;
     
-    if (likeItemsArray.count) {
-        _likeLabel.sd_resetLayout
-        .leftSpaceToView(self, margin)
-        .rightSpaceToView(self, margin)
-        .topSpaceToView(lastTopView, 10)
-        .autoHeightRatio(0);
-        
-        lastTopView = _likeLabel;
-    } else {
-        _likeLabel.attributedText = nil;
-        _likeLabel.sd_resetLayout
-        .heightIs(0);
-    }
+//    if (likeItemsArray.count) {
+//        _likeLabel.sd_resetLayout
+//        .leftSpaceToView(self, margin)
+//        .rightSpaceToView(self, margin)
+//        .topSpaceToView(lastTopView, 10)
+//        .autoHeightRatio(0);
+//        
+//        lastTopView = _likeLabel;
+//    } else {
+//        _likeLabel.attributedText = nil;
+//        _likeLabel.sd_resetLayout
+//        .heightIs(0);
+//    }
     
     
     if (self.commentItemsArray.count && self.likeItemsArray.count) {
@@ -269,9 +269,9 @@
 
 #pragma mark - MLLinkLabelDelegate
 
-- (void)didClickLink:(MLLink *)link linkText:(NSString *)linkText linkLabel:(MLLinkLabel *)linkLabel
-{
-    NSLog(@"%@", link.linkValue);
-}
+//- (void)didClickLink:(MLLink *)link linkText:(NSString *)linkText linkLabel:(MLLinkLabel *)linkLabel
+//{
+//    NSLog(@"%@", link.linkValue);
+//}
 
 @end

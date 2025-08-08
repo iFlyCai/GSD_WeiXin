@@ -1,0 +1,6 @@
+framework module Pods_GSD_WeiXin_wechat__GSD_WeiXin_wechat_UITests {
+  umbrella header "Pods-GSD_WeiXin(wechat)-GSD_WeiXin(wechat)UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
